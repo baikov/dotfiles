@@ -1,0 +1,23 @@
+[user]
+	name = Alexey Baikov
+	email = baikov52@gmail.com
+[color]
+    ui = true
+[core]
+    editor = nvim
+	excludesfile = /Users/baikov/.gitignore_global
+[diff]
+    tool = vimdiff
+[credential]
+	helper = osxkeychain
+[alias]
+	st = status
+	lg = log --oneline --graph --all --decorate
+	last = log -1 HEAD
+	br = branch
+	co = checkout
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
