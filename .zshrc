@@ -66,6 +66,8 @@ export LANG=en_US.UTF-8
 export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source "$HOME/.zplugrc"
 
+source <(fzf --zsh)
+
 # === Aliases ===
 
 # Sorts directories in top, colors, and prints `/` at directories:
@@ -76,10 +78,7 @@ alias cat='bat --paging never --decorations never --plain'
 
 # Copy public key to clipboard:
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
-
-# I use this a lot:
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy | echo '=> Copied to pasteboard.'"
-
 alias cls="clear"
 alias vimdiff="nvim -d"
 alias dcb="docker compose build"
@@ -91,3 +90,5 @@ alias dcr='() {docker compose run --rm $1;}'
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+eval "$(uv generate-shell-completion zsh)"
