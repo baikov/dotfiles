@@ -11,7 +11,7 @@ zplug 'zsh-users/zsh-syntax-highlighting', depth:1
 
 # Others might also enjoy this plugin:
 # (but it is not for me)
-# zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-autosuggestions"
 
 # Install plugins if there are plugins that have not been installed:
 if ! zplug check; then
