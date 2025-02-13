@@ -74,7 +74,7 @@ source <(fzf --zsh)
 # alias ls='gls --color -h --group-directories-first -F'
 
 # Use syntax highlight for `cat`:
-alias cat='bat --paging never --decorations never --plain'
+# alias cat='bat --paging never --decorations never --plain'
 
 # Copy public key to clipboard:
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
@@ -92,3 +92,6 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 eval "$(uv generate-shell-completion zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/baikov/.lmstudio/bin"
