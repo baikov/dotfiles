@@ -10,14 +10,11 @@ local config = wezterm.config_builder()
 -- GitHub Dark
 -- Catppuccin Mocha
 -- SoftServer
--- Darkside
 -- Andromeda
 -- Arthur
--- Bluloco Dark
--- Catppuccin Frappé
+-- Catppuccin Frappe
 -- Nord
--- SpaceGray
-config.color_scheme = 'Darkside'
+config.color_scheme = 'Catppuccin Mocha'
 config.font = wezterm.font("Hack Nerd Font")
 config.font_size = 16
 config.window_background_opacity = 0.97
