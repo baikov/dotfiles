@@ -9,6 +9,6 @@ keybind = global:cmd+`=toggle_quick_terminal
 window-save-state = always
 # macos-titlebar-style=transparent
 # copy-on-select = clipboard
-# macos-option-as-alt = true
+macos-option-as-alt = true
 # background-opacity = 0.7
 # background-blur-radius = 20
