@@ -85,6 +85,9 @@ alias dcb="docker compose build"
 alias dcu="docker compose up -d"
 alias dcd="docker compose down"
 alias dcl="docker compose logs $1"
+alias dlog="docker logs -f $1"
+alias lzd="lazydocker"
+alias lzg="lazygit"
 alias dcr='() {docker compose run --rm $1;}'
 
 export NVM_DIR="$HOME/.nvm"
